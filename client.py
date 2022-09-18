@@ -53,6 +53,7 @@ def main():
                 print(b)
 
     client.shutdown()
+    worker.join()
     client.close()
 
     print("\nbye.")
